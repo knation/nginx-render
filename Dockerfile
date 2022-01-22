@@ -6,8 +6,7 @@ FROM nginx
 RUN mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.disabled
 
 # Copy nginx conf from Render secret named `nginx.conf`
-# COPY /etc/secrets/nginx.conf /etc/nginx/nginx.conf
-COPY nginx.conf /etc/nginx/conf.d/nginx.conf
+COPY /etc/secrets/nginx.conf /etc/nginx/nginx.conf
 
 # Test config
 RUN nginx -t
