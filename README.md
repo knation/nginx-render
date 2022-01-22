@@ -1,4 +1,4 @@
-Nginx to be used a Docker deployment on Render.
+Nginx to be used as a Docker deployment on Render.
 
 # Why does this exist?
 Render is great in that you can build and run any dockerized service. However, in order to do so, you must provide the Dockerfile within a repository for it to build, so publicly available images can't be used directly. That said, this repository simply wraps nginx in another Dockerfile that render will build and run.
